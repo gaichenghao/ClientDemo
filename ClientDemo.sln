@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientDemo", "ClientDemo\ClientDemo.csproj", "{FC76E206-B8F6-4885-B8B6-FDBFDFE31E27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientDemo", "ClientDemo\ClientDemo.csproj", "{FC76E206-B8F6-4885-B8B6-FDBFDFE31E27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{6CA17F6B-2775-4312-AA70-0E1E35A82828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interface", "Interface\Interface.csproj", "{6CA17F6B-2775-4312-AA70-0E1E35A82828}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{5D0CC777-5DAD-4172-9CD1-246CB30D6999}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{5D0CC777-5DAD-4172-9CD1-246CB30D6999}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{98CF69DC-32D4-4464-A404-74D08F732141}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{98CF69DC-32D4-4464-A404-74D08F732141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceInstance", "ServiceInstance\ServiceInstance.csproj", "{0C6FE6A5-998E-472B-932B-2CC3B9F7EF48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceInstance", "ServiceInstance\ServiceInstance.csproj", "{0C6FE6A5-998E-472B-932B-2CC3B9F7EF48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayDemo", "GatewayDemo\GatewayDemo.csproj", "{06C34151-1DDB-4B3C-9A96-375280352B7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{0C6FE6A5-998E-472B-932B-2CC3B9F7EF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C6FE6A5-998E-472B-932B-2CC3B9F7EF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C6FE6A5-998E-472B-932B-2CC3B9F7EF48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C34151-1DDB-4B3C-9A96-375280352B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C34151-1DDB-4B3C-9A96-375280352B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C34151-1DDB-4B3C-9A96-375280352B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C34151-1DDB-4B3C-9A96-375280352B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

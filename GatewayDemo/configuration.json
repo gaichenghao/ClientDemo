@@ -1,0 +1,111 @@
+
+//*************************单地址
+//{
+//  "ReRoutes": [
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5726 //服务端口
+//        }
+//      ],
+//      "UpsteamPathTemplate": "/T5726/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ]
+
+//    }
+//  ]
+//}
+//*****************************多地址多实例
+//{
+//  "ReRoutes": [
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5726 //服务端口
+//        }
+//      ],
+//      "UpsteamPathTemplate": "/T5726/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ]
+//    },
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5727 //服务端口
+//        }
+//      ],
+//      "UpsteamPathTemplate": "/T5727/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ]
+//    },
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5728 //服务端口
+//        }
+//      ],
+//      "UpsteamPathTemplate": "/T5728/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ]
+//    }
+//  ]
+//}
+//********单地址多实例负载均衡
+//{
+//  "ReRoutes": [
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "DownstreamHostAndPorts": [
+//        {
+//          "Host": "localhost",
+//          "Port": 5726 //服务端口
+//        },
+//        {
+//          "Host": "localhost",
+//          "Port": 5727 //服务端口
+//        },
+//        {
+//          "Host": "localhost",
+//          "Port": 5728 //服务端口
+//        }
+//      ],
+//      "UpsteamPathTemplate": "/T5726/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ],
+//      "LoadBalancerOptions": { "Type":"RoundRobin" //轮询 LeastConnection 最少连接数服务器 NoLoadBalance 不使用负载均衡}
+//    }
+//  ]
+//}
+
+ //*******单地址多实例负载均衡—+consul
+//{
+//  "ReRoutes": [
+//    {
+//      "DownstreamPathTemplate": "/api/{url}", //服务地址--URL变量
+//      "DownstreamScheme": "http",
+//      "UpsteamPathTemplate": "/T/{url}", //网关地址--url变量 //冲突的好可以加权重Priority
+//      "UpsteamHttpMenthod": [ "Get", "Post" ],
+//      "ServiceName": "Gaich",
+//      "LoadBalancerOptions": {
+//        "Type": "RoundRobin" //轮询 LeastConnection 最少连接数服务器 NoLoadBalance 不使用负载均衡
+//      },
+//      "UseServiceDiscovery": true
+//    }
+//  ],
+//  "GlobalConfigration": {
+//    "BaseUrl": "http://127.0.0.1:6299", //网关对外地址
+//    "ServiceDiscoveryProvider": {
+//      "Host": "localhost",
+//      "Port": 8500,
+//      "Type": "Consul"
+//    }
+//  }
+//}
