@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-06-01T03:50:04.250Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="DV9E8WqL0gFJDL2UGQHU" version="14.7.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-06-01T04:01:09.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="00NiNMLL_S_8q-SJEs6T" version="14.7.3" type="github">
   <diagram id="TJZWqNuKuXwJ0ir7KAyb" name="第 1 页">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -15,6 +15,48 @@
         </mxCell>
         <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-3" value="查询" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="300" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-4" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=1;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="FK_IT6cAOYa7EVY3Q9Fr-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="120" as="sourcePoint" />
+            <mxPoint x="560" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-5" value="备注：&lt;br&gt;1、去广发调取数据&lt;br&gt;2、添加到库中（是否导入字段为0）" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="70" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-6" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="FK_IT6cAOYa7EVY3Q9Fr-3" target="FK_IT6cAOYa7EVY3Q9Fr-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="390" as="sourcePoint" />
+            <mxPoint x="360" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FK_IT6cAOYa7EVY3Q9Fr-7" target="FK_IT6cAOYa7EVY3Q9Fr-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-7" value="导入系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="160" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-8" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FK_IT6cAOYa7EVY3Q9Fr-7" target="FK_IT6cAOYa7EVY3Q9Fr-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="390" as="sourcePoint" />
+            <mxPoint x="400" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-9" value="备注：&lt;br&gt;1、通过批次号进行案件匹配&lt;br&gt;2、如果匹配上该案件插入评语，并且是否导入字段为1" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-12" value="推送给广发" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-14" value="" style="endArrow=none;dashed=1;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FK_IT6cAOYa7EVY3Q9Fr-12" target="FK_IT6cAOYa7EVY3Q9Fr-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="350" as="sourcePoint" />
+            <mxPoint x="170" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FK_IT6cAOYa7EVY3Q9Fr-16" value="备注：&lt;br&gt;1、推送只推送反馈的案件&lt;br&gt;2、筛掉已反馈并且&lt;span style=&quot;font-family: &amp;quot;arial normal&amp;quot;, arial; text-align: left; background-color: rgb(242, 242, 242);&quot;&gt;一级分类&amp;lt;&amp;gt;关怀中心-查证/关怀中心-撤案且反馈信息为空&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="130" y="240" width="105" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
